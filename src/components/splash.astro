@@ -3,19 +3,21 @@ import HeroImage from "~/components/hero-image.astro";
 ---
 
 <section class="relative h-full bg-black">
-  <video
-    autoplay
-    loop
-    muted
-    playsinline
-    class="absolute top-0 left-0 w-full h-full object-cover"
-  >
-    <source src="/src/assets/videos/videoBanner.mp4" type="video/mp4" />
-    Tu navegador no soporta videos.
-  </video>
-  <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
+  <section class="relative h-full bg-black">
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="absolute top-0 left-0 w-full h-full object-cover"
+    >
+      <source src="/videos/videoBanner.mp4" type="video/mp4" />
+      Tu navegador no soporta videos.
+    </video>
+  </section>  
+  <!-- <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
-  </div>
+  </div> -->
   <!-- <div class="relative grid h-full place-items-center sm:grid-cols-2">
     <h2
       class="flex flex-col items-center gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
